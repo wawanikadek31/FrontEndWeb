@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style */
+body{
+    font: 16px/28px arial;
+    background-color: #eaeaea;
+    color: #333;
+    background-image: url(../4latihanhtmlcss/img/8.png);
+}
+.top-bar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: chartreuse;
+    height: 50px;
+    border-bottom: 3px solid aqua;
+    z-index: 99999;
+}
+.top-bar p{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    padding-top: 10px;
+}
+.container {
+    width: 1000px;
+    margin: 80px auto;
+    background-color: azure;
+    position: relative;
+}
+.twitter {
+    width: 200px;
+    height: 200px;
+    background-image: url(../4latihanhtmlcss/img/twitter2.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    right: -1px;
+}
+.header {
+    padding: 20px;
+}
+.header .judul {
+    font-size: 50px;
+    font-weight: bold;
+}
+.main li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+.main a {
+    text-decoration: none;
+    color: salmon;
+    padding: 4px;
+}
+.main a:hover {
+    background-color: lightblue;
+    border-radius: 10px;
+}
+.main  img {
+    height: 650px;
+    width: 1000px;
+    background-size: cover;
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid aqua;
+}
+.konten {
+    width: 600px;
+    padding: 20px;
+    margin-top: 1px;
+    box-sizing: border-box;
+    float: left;
+}
+.konten h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.konten h6 a {
+    text-decoration: none;
+    color: yellowgreen;
+}
+.konten p {
+    font-size: 15px;
+}
+.sidebar {
+    width: 395px;
+    float: left;
+    margin-top: 10px;
+}
+.sidebar img {
+    width: 160px;
+    height: 150px;
+    float: left;
+    padding: 10px;
+}
+.sidebar h3{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sidebar p {
+    font: 12px/18px arial;
+}
+.footer {
+    box-sizing: border-box;
+    padding:30px;
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    height: 30px;
+}
+
+
+
+
+/* ini adalah clearfix */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
